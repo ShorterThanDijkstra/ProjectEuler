@@ -8,6 +8,7 @@
     <ItemGroup>
         <Compile Include="Program.fs"/>
         <None Include="LargestPrimeFactor.fsx" />
+        <None Include="LargestPalindromeProduct.fsx" />
     </ItemGroup>
 
 </Project>
