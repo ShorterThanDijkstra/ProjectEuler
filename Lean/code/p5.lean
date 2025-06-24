@@ -1,4 +1,13 @@
 import Std.Data.HashMap
+import Init.Data.Float
+
+def nOverLogLog_n (n : Nat) : Float :=
+  if n < 3 then 0.0 
+  else
+    let n_float := n.toFloat
+    let log_n := n_float.log
+    let log_log_n := log_n.log
+    n_float / log_log_n
 
 partial def isPrime (n : Nat) : Bool :=
   if n < 2 then false
